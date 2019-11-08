@@ -5,7 +5,7 @@ import random
 import urllib3
 from urllib3 import PoolManager
 
-#connect ke dbms berbasi api
+#connect ke dbms berbasis api
 connection = pymysql.connect(host='localhost',database='kumpulan',user='root',password='')
 cursor=connection.cursor()
 
