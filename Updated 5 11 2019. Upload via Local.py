@@ -14,7 +14,7 @@ status=1
 try:
     while status == 1:
         #Membuka database bms
-        connection_bms = pymysql.connect(host='db.mwafa.net',database='kumisteb_thingspeak',user='kumisteb_ts',password='dienteraja')
+        connection_bms = pymysql.connect(host='45.118.132.253',database='kumisteb_thingspeak',user='kumisteb_ts',password='dienteraja')
         cursor=connection_bms.cursor()
 
         #Mengetahui SATU DATA terakhir yang masuk ke server berdasarkan timestamp berbasis list
@@ -78,7 +78,7 @@ try:
         #Algoritma apabila ada data yang telah masuk
         if time_len_server != 0:
             #Membuka database bms
-            connection_bms = pymysql.connect(host='db.mwafa.net',database='kumisteb_thingspeak',user='kumisteb_ts',password='dienteraja')
+            connection_bms = pymysql.connect(host='45.118.132.253',database='kumisteb_thingspeak',user='kumisteb_ts',password='dienteraja')
             cursor=connection_bms.cursor()
 
             #Mengetahui nilai timestamp satu data terakhir yang telah masuk
@@ -125,7 +125,7 @@ try:
                 print(channel, datetime, datasatu, datadua, datatiga, dataempat, datalima, dataenam) #opsional hehe
 
                 #Membuka database bms
-                connection_bms = pymysql.connect(host='db.mwafa.net',database='kumisteb_thingspeak',user='kumisteb_ts',password='dienteraja')
+                connection_bms = pymysql.connect(host='45.118.132.253',database='kumisteb_thingspeak',user='kumisteb_ts',password='dienteraja')
                 cursor=connection_bms.cursor()
 
                 #Memberi syntax SQL untuk memasukkan data channel, timestamp, entry_id dan nilai sensor - sensor dari tabel totaldata
