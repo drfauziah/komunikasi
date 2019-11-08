@@ -32,7 +32,7 @@ try:
         #query="INSERT INTO totaldata (datetime, sensorsatu) VALUES (%s, %s);"%(timestamp, s_satu)
         #query="INSERT INTO totaldata (sensorsatu) VALUES (%s);"%(s_satu)
         #query="INSERT INTO totaldata (sensordua) VALUES (%s);"%(s_dua)
-        query="INSERT INTO tabeldata (channel, entry_id, field1) VALUES (%s, %s, %s);"%(channel, entry_id, s_satu)
+        query="INSERT INTO tabeldata (channel, entry_id, field1, field2, field3) VALUES (%s, %s, %s, %s, %s);"%(channel, entry_id, s_satu, s_dua, s_tiga)
         cursor.execute(query)
         connection.commit()
         print(s_satu, s_dua, s_tiga)
